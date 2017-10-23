@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{099C833C-B95B-4B8E-B771-C36BE8627577}</ProjectGuid>
+    <RootNamespace>CaixaMagica</RootNamespace>
+    <ProjectName>CaixaMagica</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;C:\Arduino\Projetos\CaixaMagica;C:\Program Files (x86)\Arduino\libraries\IRremote;C:\Program Files (x86)\Arduino\libraries\IRremote\utility;C:\Program Files (x86)\Arduino\libraries\ServoTimer2;C:\Program Files (x86)\Arduino\libraries\ServoTimer2\utility;C:\Program Files (x86)\Arduino\libraries\Streaming;C:\Program Files (x86)\Arduino\libraries\Streaming\utility;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\is41ep1p.ykm\Micro Platforms\default\debuggers;C:\Users\Acer\Documents\Arduino\libraries;C:\Arduino\Projetos\CaixaMagica;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard;C:\Program Files (x86)\Arduino\libraries\IRremote;C:\Program Files (x86)\Arduino\libraries\ServoTimer2;C:\Program Files (x86)\Arduino\libraries\Streaming;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\is41ep1p.ykm\Micro Platforms\default\debuggers;C:\Users\Acer\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire\utility;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Arduino\Projetos\CaixaMagica\__vm\.CaixaMagica.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=165;ARDUINO_AVR_UNO;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\cores\arduino;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\variants\standard;D:\Documentos\Dropbox\Arduino\Projetos\CaixaMagica\Arduino\CaixaMagica;C:\Users\markus.viezzer\Documents\Arduino\libraries\Adafruit_NeoPixel;C:\Users\markus.viezzer\Documents\Arduino\libraries\Adafruit_NeoPixel\utility;C:\Users\markus.viezzer\Documents\Arduino\libraries\Adafruit_TiCoServo;C:\Users\markus.viezzer\Documents\Arduino\libraries\Adafruit_TiCoServo\utility;C:\Users\markus.viezzer\Documents\Arduino\libraries\IRLib;C:\Users\markus.viezzer\Documents\Arduino\libraries\IRLib\utility;C:\Users\markus.viezzer\Documents\Arduino\libraries\MFRC522;C:\Users\markus.viezzer\Documents\Arduino\libraries\MFRC522\utility;C:\Users\markus.viezzer\Documents\Arduino\libraries\NewPing;C:\Users\markus.viezzer\Documents\Arduino\libraries\NewPing\utility;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries\SoftwareSerial;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries\SoftwareSerial\utility;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries\SPI;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries\SPI\utility;C:\Users\markus.viezzer\Documents\Arduino\libraries\Streaming;C:\Users\markus.viezzer\Documents\Arduino\libraries\Streaming\utility;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries\Wire;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries\Wire\utility;D:\Arquivos de Programas (x86)\Arduino\libraries;D:\Arquivos de Programas (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\xqbigctz.bvt\Micro Platforms\default\debuggers;C:\Users\markus.viezzer\Documents\Arduino\libraries;D:\Arquivos de Programas (x86)\Arduino\hardware\tools\avr/avr/include/;D:\Arquivos de Programas (x86)\Arduino\hardware\tools\avr//avr/include/avr/;D:\Arquivos de Programas (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Documentos\Dropbox\Arduino\Projetos\CaixaMagica\Arduino\CaixaMagica\__vm\.CaixaMagica.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=16000000L;ARDUINO=165;ARDUINO_AVR_UNO;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CaixaMagica.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.CaixaMagica.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM3" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

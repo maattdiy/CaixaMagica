@@ -1,0 +1,91 @@
+
+/********************************************************************
+  Caixa Mágica • Módulo Quatro em Linha
+
+  Links de suporte:
+  
+
+*********************************************************************/
+
+// ==================================================================
+// Includes
+// ==================================================================
+
+
+// ==================================================================
+// Constantes/Variáveis
+// ==================================================================
+
+int idJogador = 0
+int[] corJogador = [255, 255];
+int posPeca = 0;
+int idVencedor;
+
+const int gridL = 8
+const int gridA = 7
+int[gridL, gridA] grid
+
+void iniciar() {
+  idJogador = 0;
+  idVencedor = 0;
+  posPeca = -1;
+  desenharGrid();
+}
+
+void processar() {
+  if (ultJSCmd = '>') { posPeca = posPeca + 1 ; }
+  if (ultJSCmd = '<') { posPeca = posPeca - 1 ; }
+  
+  if (ultJSCmd = 'v') {
+	// Verifica se a peça pode descer
+	for (int y = 1; y <= gridA; i++) {
+      if (grid[posPeca, y] = 0) {
+        grid[posPeca, y] = idJogador;
+		posPeca = -1;
+		if (idJogador = 2) { idJogador = 1 } else { idJogador = 2 }
+	  }
+	};	
+	
+  };
+  
+  verificarFim();
+  desenhar();
+}
+
+void verificarFim() {
+  int seguidas[];
+  int id;
+  
+  for (int x = 1; x <= gridL; i++) {
+    for (int y = 1; y <= gridA; i++) {
+	  id = grid[x, y];
+	  if (id != 0) {
+        seguidas[id]++;
+		if (seguidas[id] = 4) {
+		  idVencedor = id;
+          break;
+		};
+	  }
+  }
+}
+
+void desenhar() {
+  if (idVencedor > 0) { desenharVencedor(); }
+  if (idVencedor = -1) { desenharEmpate(); }
+  if (idVencedor = 0) { desenharGrid(); }
+}
+
+void desenharGrid() {
+  // Borda
+  
+  // Peças
+}
+
+void desenharVencedor() {
+  
+}
+
+void desenharEmpate() {
+  
+}
+
